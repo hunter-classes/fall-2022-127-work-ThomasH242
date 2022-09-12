@@ -1,20 +1,20 @@
 
-#Chapter 7 Question 7
 from cmath import atan
 from socket import BTPROTO_RFCOMM
 
-
+#Q7
 def is_even(n):
     if(n % 2 == 0):
         return True
     else:
         return False
-
+#Q8
 def is_odd(n):
     if(n % 2 == 1):
         return True
     else:
         return False
+#Q10-11
 def is_rightangled(a,b,c):
     at = a**2
     bt = b**2
