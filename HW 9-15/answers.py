@@ -31,3 +31,13 @@ print(is_even(3))#False
 print(is_odd(3))#True
 print(is_odd(2))#False
 print(is_rightangled(5,3,4))#true
+#Coding Bat
+def hello_name(name):
+  s = "Hello "+ name+ "!"
+  return(s)
+def make_out_word(out, word):
+  s = out[0:2]+word+out[2:4]
+  return s
+def first_two(str):
+  s = str[0:2]
+  return s
