@@ -25,12 +25,6 @@ def is_rightangled(a,b,c):
     else:
         return False
 
-
-print(is_even(2))#True
-print(is_even(3))#False
-print(is_odd(3))#True
-print(is_odd(2))#False
-print(is_rightangled(5,3,4))#true
 #Coding Bat
 def hello_name(name):
   s = "Hello "+ name+ "!"
@@ -41,3 +35,12 @@ def make_out_word(out, word):
 def first_two(str):
   s = str[0:2]
   return s
+
+print(is_even(2))#True
+print(is_even(3))#False
+print(is_odd(3))#True
+print(is_odd(2))#False
+print(is_rightangled(5,3,4))#true
+print(hello_name("Thomas"))
+print(make_out_word("under","line"))
+print(first_two("Thomas"))
