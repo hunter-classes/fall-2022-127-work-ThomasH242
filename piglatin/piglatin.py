@@ -20,7 +20,7 @@ def piglatin(word):
         return w
     else:
         if(n > 0):
-            w = word[1:n].capitalize() + word[0:1].lower() + 'ay' + word[n:99].lower()
+            w = word[1:n].capitalize() + word[0:1].lower() + 'ay' + word[n].lower()
             return w
         w = word[1:99] + word[0:1] + 'ay'
         return w
