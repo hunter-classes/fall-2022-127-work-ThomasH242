@@ -14,12 +14,16 @@ def bondify(name):
 
 def piglatin(word):
     l = word[0].lower()
-    if( l== 'a' or l == 'e' or l == 'i' or l == 'o' or l == 'u'):
+    n = word.find("'")
+    if word in 'aeiou':
         w = word+'yay'
         return w
     else:
-        i = word[1:99] + word[0:1] + 'ay'
-        return i
+        if(n > 0):
+            w = word[1:n].capitalize() + word[0:1] + word[n:99] + 'ay' 
+            return w
+        w = word[1:99] + word[0:1] + 'ay'
+        return w
 """
 input: a string representing a word
 returns: a new string with the word converted to piglatin
@@ -33,5 +37,5 @@ If the first letter is a vowel, just add "yay" to the end
 try to also handle upper case words
 
 """
-print(piglatin("hello"))
+print(piglatin("you're"))
 print(bondify("thomas huang"))
