@@ -20,6 +20,7 @@ def even(list):
             c+= i
     return c
 print(even(l),'even')
+
 '''def lenfive(list):
     c = 0
     for i in list:
