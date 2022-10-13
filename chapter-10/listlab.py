@@ -20,7 +20,8 @@ def odd(l):
     return nl
 def C(l):
    e = ''
-   e = l.upper()
+   for i in l.split():
+        e += i.capitalize() + " "
    return e
 def upfive(st):
     nl = []
