@@ -2,16 +2,11 @@ from tkinter import E
 from unicodedata import east_asian_width
 import math
 def small(s):
+    num = s[0]
     for i in s:
-        num = 0
-        str = ''
-        if type (i) == int:#integers
-            if num < i:
-              num = i
-        else: #strings
-            if(len(str) < len(i)):
-                str = i
-    return num,str
+        if i < num:
+            num = i
+    return num
 def odd(l):
     nl = []
     for i in l:
@@ -63,7 +58,7 @@ def sam(l):
         count += 1
         i+=1
     return count+1
-ex = [24,'hello',2342, "hu"]#1
+ex = [24454,23,3434,21]#1
 print(small(ex)," #1")
 exa = [1,2,3,4,5,6,7,8,9,10]#2
 print(odd(exa)," #2")
