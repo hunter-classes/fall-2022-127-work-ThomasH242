@@ -27,7 +27,7 @@ def Capitalized(olist):
 def upfive(olist):
     newlist = []
     for i in olist.split():# SPLIT EACH WORDS BY THE SPACES AND ADDED TO A LIST
-        if len(i) > 4: # IF ITS GREATER THAN 4 CHARACTERS UPPERCASE ALL THE CHARACTERS FROM THE WORD
+        if len(i) > 5: # IF ITS GREATER THAN 4 CHARACTERS UPPERCASE ALL THE CHARACTERS FROM THE WORD
             i = i.upper()
         newlist.append(i)
         sentence = " ".join(newlist)
