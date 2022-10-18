@@ -18,24 +18,30 @@ hlist = hread.split()
 def filters(S): 
     NS = S.split() #New Sentence
     c = 0 # int index
-    ran = random.randint(0,len(hlist)-1) # outside the for loop so the name wont change
+    # outside the for loop so the name wont change
+    ran = random.randint(0,len(hlist)-1) 
     for i in S.split():
 #verb
         if i.lower() == '<verb>':
+    # gets a random number from 0: length of verb list-1(it counts the size of the list STARTING at 1)
             ran = random.randint(0,len(vlist)-1)
+    # the new sentence[int index] = a verblist[random].lowercase()
             NS[c] = vlist[ran].lower()
-            # If its the first word or previous word had period
+    # If its the first word or previous word had period
             if(c == 0 or NS[c-1].find('.') > 0):
                 NS[c] = vlist[ran].capitalize()
 #noun
         elif i.lower() == '<noun>':
+            # gets a random number from 0: length of noun list-1
             ran = random.randint(0,len(nlist)-1)
+    # the new sentence[int index] = a nounlist[random].lowercase()
             NS[c] = nlist[ran].lower()
-            #if its the first word or previous word had period
+    #if its the first word or previous word had period
             if(c == 0 or NS[c-1].find('.') > 0):
                 NS[c] = nlist[ran].capitalize()
 #Hero 
-        elif i.lower() == '<hero>':# Hero name wont change 
+        elif i.lower() == '<hero>':
+    # Hero name wont change 
             NS[c] = hlist[ran].capitalize()
         c+=1
     return " ".join(NS)          
