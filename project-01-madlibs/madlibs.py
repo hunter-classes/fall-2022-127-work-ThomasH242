@@ -48,5 +48,3 @@ def filters(S):
     return " ".join(NS)            
     
 print(filters(sentence))
-
-# YO FIX CAPITALIZATION 
