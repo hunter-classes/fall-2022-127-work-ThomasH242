@@ -20,8 +20,7 @@ print(vlist,hlist,nlist)
 def filters(S): 
     NS = S.split() #New Sentence
     c = 0 # int index
-    v = ''
-    n = ''
+    ran = random.randint(0,len(hlist)-1) # outside the for loop so the name wont change
     for i in S.split():
 #verb
         if i.lower() == '<verb>':
@@ -39,12 +38,9 @@ def filters(S):
             if(c == 0 or NS[c-1].find('.') > 0):
                 NS[c] = nlist[ran].capitalize()
 #Hero 
-        elif i.lower() == '<hero>':
-            ran = random.randint(0,len(hlist)-1)
+        elif i.lower() == '<hero>':# Hero name wont change 
             NS[c] = hlist[ran].capitalize()
         c+=1
-    return " ".join(NS)            
+    return " ".join(NS)          
     
 print(filters(sentence))
-
-# YO FIX CAPITALIZATION 
