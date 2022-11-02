@@ -17,6 +17,7 @@ hlist = hread.split()
 #functions
 def filters(S): 
     NS = S.split() #New Sentence
+    print(NS)
     c = 0 # int index
     # outside the for loop so the name wont change
     ran = random.randint(0,len(hlist)-1) 
