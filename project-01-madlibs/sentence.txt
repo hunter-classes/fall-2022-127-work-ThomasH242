@@ -1,1 +1,1 @@
-Sam <VERB> the <NOUN> and then <VERB> the <NOUN> later. <HERO> <VERB> in the <NOUN> and then <HERO> <VERB> <NOUN> later.
+Sam <VERB> the <NOUN> and then <VERB>. the <NOUN> later. <HERO> <VERB> in the <NOUN> and then <HERO> <VERB> <NOUN> later.
