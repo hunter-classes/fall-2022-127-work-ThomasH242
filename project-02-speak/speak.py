@@ -1,8 +1,8 @@
 #extras 
-#store transitions in files Y
-#punct, lower, and upper case Y
-#translate different language X
-#advanced translation Y
+#store transitions in files ✔
+#punct, lower, and upper case ✔
+#translate different language ✔
+#advanced translation ✔?
 #---------------------------------------------------prep-----------------------------------------------------------------------
 s = open('input.txt','r')#input
 t = open("pirate.dat",'r')#pirate
