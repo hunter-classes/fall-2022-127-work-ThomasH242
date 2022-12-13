@@ -13,20 +13,19 @@ import pandas as p
 import matplotlib.pyplot as plot
 import numpy as np
 csv = p.read_csv('NYPDArrestList.csv')
+#matplotlib-------------------------------------------------
 def plotrace(race):
-    fig = plot.figure(figsize = (10,10))
+    fig = plot.figure(figsize = (20,10))
     plot.bar(list(race.keys()), list(race.values()), color = 'blue', width = 1)
     plot.xlabel("Races")
     plot.ylabel("People")
     plot.title(" People Arrested ")
     plot.show()
-
-#Race---------------------------------------------------------------------------------------------------------------#
-races = {'BLACK' : 0, 'WHITE' : 0, 'BLACK HISPANIC' : 0, 'WHITE HISPANIC' : 0, 'ASIAN / PACIFIC ISLANDER' : 0, 'AMERICAN INDIAN/ALASKAN NATIVE': 0, 'UNKNOWN': 0,}
-for i in csv["PERP_RACE"]:
+#Races---------------------------------------------------------------------------------------------------------------#
+races = {'BLACK' : 0, 'WHITE' : 0, 'BLACK HISPANIC' : 0, 'WHITE HISPANIC' : 0, 'ASIAN / PACIFIC ISLANDER' : 0, 'AMERICAN INDIAN/ALASKAN NATIVE': 0, 'UNKNOWN': 0}
+for i in csv["PERP_RACE"]:#Counts the 
         races[i] +=1
 newdict = {}
-c = 0
 for j in races:
     newdict[j[0:-3]] = races[j]
 print(races)
